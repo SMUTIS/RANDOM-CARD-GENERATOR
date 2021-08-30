@@ -1,1 +1,70 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: rgba(255, 99, 71, 0.5);
+  box-sizing: border-box;
+}
+.container-fluid {
+  padding-top: 150px;
+  font-family: "Lobster", cursive;
+}
+.title {
+  margin-bottom: 80px;
+  font-size: 350%;
+}
+.card {
+  text-align: center;
+  background: white;
+  margin: auto;
+  font-size: 90px;
+  height: 420px;
+  width: 250px;
+  padding-top: 140px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 10px 5px 5px black;
+}
+:before {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 80px;
+}
+.spade:before,
+.spade:after {
+  content: "\2660";
+}
+.club:before,
+.club:after {
+  content: "\2663";
+}
+.heart:before,
+.heart:after {
+  content: "\2665";
+  color: red;
+}
+.diamond:before,
+.diamond:after {
+  content: "\2666";
+  color: red;
+}
+.spade:after,
+.club:after,
+.heart:after,
+.diamond:after {
+  -ms-transform: rotate(180deg); /* Internet Explorer 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg); /* Standard syntax */
+  right: 20px;
+  display: flex;
+  text-align: right;
+  position: relative;
+  top: 30px;
+  left: -20px;
+  font-size: 80px;
+}
+
+.btn {
+  margin-top: 100px;
+  border-radius: px solid rgb(218, 137, 32);
+}
